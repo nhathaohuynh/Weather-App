@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  font-family: "Open Sans" , sans-serif;
+  font-size : 16px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  font-family: "Open Sans";
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+.container{
+  color : white ;
+  background: linear-gradient(145deg ,#2193b0 , #6dd5ed);
+  width : 400px;
+  margin : 50px auto ;
+  border-radius : 8px;
+}
+.search-bar {
+  width : 70% ;
+  margin: 0 auto ;
+  padding-top :20px;
+  position : relative ;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-bottom : 1px solid white;
+
+}
+input[name="search-city"]{
+  border : none;
+  padding: 5px 5px 5px 25px;
+  height : 20px;
+  background:transparent;
+  color : white;
+}
+input[name="search-city"]::placeholder{
+  color : rgba(255,255,255,0.7);
+}
+.icon {
+  position : absolute;
+  cursor : pointer;
+}
+.search-icon{
+  margin-right : 5px;
+  left : 0;
+}
+.icon-right{
+  right : 0;
+}
+.microphone .recording-icon{
+  display : none ;
+  width : 10px ;
+  height : 10px ;
+  background-color: #e22d2d;
+  border-radius : 50% ;
+  animation : pulse 1s infinite linear ;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 3px 0 rgba(173,0,0,0.3);
+  }
+  65%{
+    box-shadow: 0 0 3px 5px rgba(173,0,0,0.3);
+  }
+  100%{
+    box-shadow :0 0 3px 5px rgba(173,0,0,0);
+  }
+}
+.microphone.recording .recording-icon{
+  display : inline-block;
+}
+
+.microphone.recording .microphone-icon{
+  display : none;
+}
+.wraper-info{
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+  align-items : center;
+  height : 40vh;
+  padding : 80px 50px;
+}
+.weather-img{
+  height :70px;
+  width : 80px;
+}
+.city-name{
+  font-size : 25px;
+  margin-bottom : 3px;
+}
+.weather-state{
+  font-size : 14px;
+}
+.temperature{
+  font-size : 80px;
+  line-height : 1;
+  position: relative;
+  font-weight : lighter;
+}
+.temperature:after{
+  content : "o";
+  font-size : 40px;
+  position : absolute;
+  right : 0;
+  top : 0;
+  transform : translate(100% ,-20%);
+}
+.additional{
+  border-top : 1px solid white;
+  display : flex;
+  flex-direction : column;
+  padding : 10px 20px;
+  font-size : 14px;
+  text-align : center;
+}
+.row{
+  display :flex;
+  margin-bottom : 8px;
+}
+.item {
+  display : flex;
+  flex-direction: column;
+  flex : 1;
+}
+.lable {
+  font-weight : bold;
+}
+.value {
+  color : rgba(255,255,255,0.7)
+}

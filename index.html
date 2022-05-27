@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./moment.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-section">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass icon search-icon"></i>
+          <input
+            type="text"
+            name="search-city"
+            id="search-input"
+            placeholder="Tìm Kiếm Thành Phố..."
+          />
+          <span class="microphone icon icon-right">
+            <i class="fa-solid fa-microphone microphone-icon"></i>
+            <span class="recording-icon"></span>
+          </span>
+        </div>
+        <div class="wraper-info">
+          <p class="city-name">--</p>
+          <p class="weather-sate">--</p>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather-img"
+            class="weather-img"
+          />
+          <p class="temperature">--</p>
+        </div>
+      </div>
+      <div class="additional">
+        <div class="row">
+          <div class="item">
+            <div class="lable">MT Mọc</div>
+            <div class="value sunrise">--</div>
+          </div>
+          <div class="item">
+            <div class="lable">MT lặn</div>
+            <div class="value sunset">--</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item">
+            <div class="lable">Độ ẩm</div>
+            <div class="value"><span class="huminity">--</span>%</div>
+          </div>
+          <div class="item">
+            <div class="lable">Gió</div>
+            <div class="value"><span class="wind-speed">--</span>km/h</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
